@@ -65,6 +65,91 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+переменную d` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm i sass
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+<!-- <img src={require('./logo.jpeg')} /> -->
+
+import logo from './logo.svg' обьявили и импортировали logo и вывели ее в src={logo}
+
+<img src={logo} className="App-logo" alt="logo"/>
+
+ни каких scss использовать только css и подключать index.css -> index.js iApp.css -> App.js
+sass в реакте заморочка
+
+.nav-link {
+font-family: 'Roboto', sans-serif;
+color: hwb(220 93% 6%) !important;
+}
+так задавать цвет для
+
+<Nav.Item >
+<Nav.Link href="/home">JACKETS</Nav.Link>
+</Nav.Item>
+
+вывод карточек товара методом map смотри Featured.js и Card.js
+
+<!-- Featured.js -->
+
+import React from "react";
+
+import { prolData } from "./data/prolData";
+import Card from './Card'
+
+function Featured() {
+
+return (
+
+  <div className="content p-40">
+    <h1>
+      <b>FEATURED</b> ARRIVALS
+    </h1>
+    <p className="bnm">
+      “Whoever said money cant buy happiness simply didnt know WHERE TO SHOP”
+    </p>
+    <div className="d-flex flex-wrap">
+{prolData.map(obj => (
+  <Card
+  image={obj.image}
+  title={obj.title}
+  price={obj.price}
+  />
+))}
+    </div>
+    </div>
+
+);
+
+}
+export default Featured;
+
+<!-- Card.js -->
+
+function Card(props) {
+return(
+
+<div className="card">
+<div className="zx">
+<img
+src={require('../assets/images/arrivel/prol/' +
+props.image +
+'.jpg')}
+className="img-fluid"
+alt={props.title}
+/>
+<h3 className="as">{props.title}</h3>
+<div>
+<span>Цена:</span>
+<b className="az"> {props.price}</b>
+</div>
+</div>
+</div>
+);
+}
+export default Card;
+
+d-flex flex-wrap позволяет делать адаптивные картинки

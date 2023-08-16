@@ -1,0 +1,180 @@
+.rovs{
+  max-width: 1660px;
+}
+
+
+.centered {
+  font-family: 'Josefin Sans';
+    font-size: 8.2px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #d11717;
+}
+.centered1 {
+  font-family: 'Josefin Sans';
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #d31515;
+}
+@media only screen and (max-width: 500px) {
+  .centered1 {
+  display: none;
+  }
+}
+
+.nio{
+  margin-top: -100px;
+}
+.navbar {
+  height: 90px;
+}
+
+.nav-link {
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #444444;
+}
+
+.navbar-nav {
+  height: 90px;
+}
+
+.logo {
+  padding-right: 180px;
+}
+
+.collapse-fontsize {
+  font-size: 18px;
+}
+
+.menu-link {
+  font-family: Lato;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #393939;
+}
+
+.menu-link1 {
+  font-family: Playfair;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  padding: 25px 30px;
+
+
+}
+
+.icons {
+  a {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 7px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .icons {
+    display: none;
+  }
+}
+
+
+
+.icons a {
+  margin-right: 50px;
+}
+
+.ds {
+  max-width: 30px;
+}
+
+.cd {
+  max-width: 170px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .cd {
+    display: none;
+  }
+}
+
+input[type=text] {
+  background-color: rgb(255, 255, 255);
+  /* background-image: url('../assets/images/arrivel/user_icon.png'); */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+input[type=text1] {
+  background-color: rgb(18, 15, 15);
+  /* background-image: url('../assets/images/arrivel/plus.png'); */
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+input[type=search] {
+  background-color: rgb(255, 255, 255);
+  /* background-image: url('../assets/images/arrivel/search_icon_731.png'); */
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+
+}
+
+.qwe {
+  background-color: rgb(255, 255, 255);
+  /* background-image: url('../assets/images/arrivel/placehold_699.png'); */
+  background-position: -20px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+}
+
+.erw {
+  background-color: rgb(255, 255, 255);
+  /* background-image: url('../assets/images/arrivel/placehold_706.png'); */
+  background-position: -20px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.cont {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-right: 130px;
+  margin-top: -100px;
+}
+.dfp{
+  max-width: 240px;
+}
+.nav-link {
+  font-family: 'Source Sans Pro';
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #444444 !important;
+    margin-right: 10px;
+
+}
+

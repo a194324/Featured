@@ -1,13 +1,135 @@
-body {
+@import '../node_modules/macro-css'
+
+body{
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import './components/styles/header';
+@import './components/styles/arrivals';
+
+
+.card{
+  border: 1px solid #f8f8f8;
+  padding: 20px;
+  max-width: 230px;
 }
+.as{
+  margin-top: 30px;
+font-family: 'Source Sans Pro';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #595959;
+}
+.az{
+  font-family: 'Source Sans Pro';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #595959;
+}
+.zx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bnm{
+  margin-bottom: 30px;
+  font-family: 'Source Sans Pro - It';
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #595959;
+}
+span{
+  text-transform: uppercase;
+  font-size: 13px;
+  opacity: 0.5;
+}
+.zl{
+  font-family: 'Source Sans Pro';
+    font-size: 48px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #1a1a1a;
+}
+.df{
+  font-family: 'Source Sans Pro';
+    font-size: 48px;
+    line-height: 12px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: #595959;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 1000px) {
+  .df {
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.olp{
+  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 470px) {
+  .card{
+    border: 1px solid #f8f8f8;
+      padding: 20px;
+      max-width: 500px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .card1{
+    border: 1px solid #f8f8f8;
+      padding: 20px;
+      max-width: 500px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card{
+    border: 1px solid #f8f8f8;
+      padding: 20px;
+      max-width: 700px;
+  }
+}
+.fop {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.button {
+width: 184px;
+  height: 32px;
+  background-color: #e1bc62;
+}
+
+.sdt{
+max-width: 1660px;
+height: auto;
+background-color: blueviolet;
+}
+
